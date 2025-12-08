@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Pulse</title>
+  <link href="untitle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="pictures/logo.jpg" alt="Pulse Logo">
+      <p>Pulse</p>
+    </div>
+
+    <ul class="listBox">
+      <li><a href="#main">Главная</a></li>
+      <li>
+        <a href="#event">О событии</a>
+        <ul class="drop">
+          <li><a href="#artists">Исполнители</a></li>
+        </ul>
+      </li>
+      <li><a href="#tickets">Билеты</a></li>
+    </ul>
+  </header>
+	
+	<main>
+		<div class="hero" id="main"> </div>
+		
+		<section class="posterText">
+			<div class="h1"> Свет, музыка, ночь </div>
+			<div class="h2">  Погрузись в магию ночного города, где каждый луч неона превращается в ритм, а каждая мелодия — в движение. Pulse — это вечер, где синтвейв встречается с твоими эмоциями: световые волны и музыка создают пространство, в котором хочется жить здесь и сейчас. От первых аккордов до последних отблесков неона — ночь станет твоим собственным саундтреком. </div>
+		</section>
+		
+		<section class="about_the_event" id="event">
+			<div class="aboutText">
+			  <div class="h1"> О событии </div>
+				<div class="h2"> 
+					<p> Эта ночь станет путешествием сквозь свет, звук и атмосферу города, где каждый ритм оживает на глазах. На сцене тебя ждёт <span style="color: #AAF6A6">DJ Nova</span>, чьи пульсирующие треки заставят сердце биться в такт неоновым огням, а <span style="color: #AAF6A6">Luna Echo</span> подарит волшебные вокальные линии, которые погружают в мир мечтаний и эмоций. <span style="color: #AAF6A6">PixelWave</span> создаст уникальные визуальные эффекты и световые волны, превращая зал в настоящую арт-инсталляцию, где музыка и графика сливаются в единое целое. </p><br>
+					<p><span class="h3" style="color: #B7B7FF">12 октября в 22:00, Клуб “Гипноз” - ты станешь частью неоновой истории! </span></p></div> 
+			</div>
+			
+			<div class="video"><video width="400px" height="500px" src="pictures/video.mp4" controls> </video></div>
+		</section>	
+		
+		<section id="artists" class="artists">
+			<div class="h1"> Исполнители </div>
+			<nav>
+				<ul class="spisokKnopok">
+					<li> <button class="artist-btn active" data-index="0"> DJ Nova </button> </li>
+					<li> <button class="artist-btn" data-index="1">Luna Echo</button> </li>
+					<li> <button class="artist-btn" data-index="2">PixelWave</button> </li>
+				</ul>	
+			</nav>
+
+			<div class="artists-container">
+				<!-- Карточка 1: DJ Nova -->
+				<div class="artist-card active" data-index="0">
+					<img class="artist-photo" src="pictures/DJ_Nova.jpg" alt="DJ Nova">
+					<div class="artist-info">
+						<p class="p1" style="color: #AAAAC0">Мастер синтвейва и электрохауса, сочетающий ретро-биты с современным звучанием. Его сеты — это смесь неонового безумия, мощных басов и атмосферных переходов. Когда Nova выходит на сцену, город будто оживает — каждый ритм проникает под кожу и заставляет двигаться даже тех, кто пришёл просто «посмотреть».</p><br> 
+						<p class="p1" style="color: #AAAAC0"> Жанры: Синтвейв, ретровейв, Электрохаус </p> 
+					</div>
+				</div>
+
+				<!--  Luna Echo -->
+				<div class="artist-card" data-index="1">
+					<img class="artist-photo" src="pictures/luna.jpg" alt="Luna Echo">
+					<div class="artist-info">
+						<p class="p1" style="color: #AAAAC0">Luna Echo — загадочная архитекторша звука, которая смешивает дримвейв с холодным даунтемпо, создавая ощущение, будто ты оказался в городе, где ночь никогда не кончается. Её треки — мягкие, туманные, но с чётким битом, который будто ведёт тебя за руку через неоновые переулки. Это музыка, которая не давит — она растворяет.</p><br> 
+						<p class="p1" style="color: #AAAAC0"> Жанры: Дримвейв, даунтемпо, атмосферный поп </p> 
+					</div>
+				</div>
+
+				<!-- Карточка 3: PixelWave -->
+				<div class="artist-card" data-index="2">
+					<img class="artist-photo" src="pictures/pixelwave.jpg" alt="PixelWave">
+					<div class="artist-info">
+						<p class="p1" style="color: #AAAAC0">PixelWave — настоящий кибер-шаман, превращающий цифровой шум в живую энергию. Он выходит на сцену как взрыв пикселей: резкие разрывы, битовые всполохи и мелодии, от которых хочется скакать, прыгать и улетать в восьмибитный космос. Когда PixelWave играет, танцпол становится уровнем, а публика — игроками, и каждый звук ощущается как бонус, который попал прямо в душу.</p><br> 
+						<p class="p1" style="color: #AAAAC0"> Жанры: Чиптюн, глитч-хоп, битпоп </p> 
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<div class="pay-frame" id="tickets">
+			<button class="pay-btn"> Купить билет </button>
+		</div>	
+	</main>
+	
+	<footer>
+		<p class="p2"> ©Pulse 2025</p>	
+	</footer>
+	
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const buttons = document.querySelectorAll('.artist-btn');
+			const cards = document.querySelectorAll('.artist-card');
+    
+			console.log('Кнопок найдено:', buttons.length);
+			console.log('Карточек найдено:', cards.length);
+    
+			buttons.forEach((btn, index) => {
+				console.log(`Кнопка ${index}:`, btn.textContent.trim());
+		    });
+    
+			cards.forEach((card, index) => {
+				const name = card.querySelector('.artist-name');
+				console.log(`Карточка ${index}:`, name ? name.textContent : 'Нет имени');
+			});
+    
+			function switchArtist(index) {
+		        console.log('Переключение на артиста с индексом:', index);
+        
+				cards.forEach((card, i) => {
+		            if (card.classList.contains('active')) {
+						card.classList.remove('active');
+						console.log(`Скрыта карточка ${i}`);
+					}
+				});
+        
+				buttons.forEach((btn, i) => {
+					if (btn.classList.contains('active')) {
+						btn.classList.remove('active');
+						console.log(`Снят активный класс с кнопки ${i}`);
+					}
+				});
+        
+				if (cards[index]) {
+					cards[index].classList.add('active');
+					console.log(`Показана карточка ${index}:`, cards[index].querySelector('.artist-name').textContent);
+				} else {
+					console.error(`Карточка с индексом ${index} не найдена!`);
+				}
+        
+				if (buttons[index]) {
+					buttons[index].classList.add('active');
+					console.log(`Активирована кнопка ${index}:`, buttons[index].textContent.trim());
+				} else {
+					console.error(`Кнопка с индексом ${index} не найдена!`);
+				}
+			}
+
+			buttons.forEach((button, index) => {
+				button.addEventListener('click', () => {
+					console.log('Нажата кнопка:', button.textContent.trim(), 'индекс:', index);
+					switchArtist(index);
+				});
+			});
+
+			switchArtist(0);
+		});
+	</script>
+	</body>
+</html>
