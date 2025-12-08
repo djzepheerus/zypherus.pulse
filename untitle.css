@@ -1,0 +1,341 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Monocraft';
+  src: url("fonts/Monocraft.ttf") format('truetype');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {	
+	
+	padding-top: 30px;
+	color: white;
+	font-family: 'Monocraft', monospace;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(13, 13, 43, 1))
+}
+
+.hero {
+	width: 100%;
+	height: 903px;
+	background-image: url("pictures/nightGirl.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	 
+	position: relative;
+	margin-top: 70px;
+	z-index: 1;
+
+}
+
+.header {
+	width: 100%;
+	height: 100px;
+	
+	background-color: #04030b;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 60px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.logo { 
+	width: 120px; 
+	font-size: 30px; 
+	display: grid; 
+	text-align: center; 
+	color: white; }
+
+.logo img {
+	width: 150px;
+	object-fit: cover;
+	border-radius: 10px;
+
+}
+
+.listBox {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+	gap: 80px;
+	font-family: 'Arial', sans-serif;
+	font-size: 20px;
+	position: relative;
+}
+
+.listBox li {
+	position: relative;
+}
+
+.listBox a {
+	color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+}
+
+.listBox a:hover {
+	color: #b7b7ff;
+}
+
+.drop {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	background-color: #0c0b18;
+	list-style: none;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	white-space: nowrap;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.drop li a {
+	color: #cfcffb;
+	font-size: 14px;
+	display: block;
+	padding: 5px 0;
+}
+
+.drop li a:hover {
+	color: #b7b7ff;
+}
+
+.listBox li:hover > .drop {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+	transform: translate(-50%, 5px);
+}
+
+.posterText {
+	width: 818px;
+	height: 355px;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	
+	background-color: rgba(72, 126, 74, 0.17);
+	border-radius: 42px;
+	box-shadow: 0px 2px 10.9px 10px rgba(170, 246, 166, 0.26);
+	z-index: 2;
+}
+
+.h1 {
+	font-size: 40px;
+	padding: 30px;
+	color: white;
+}
+
+.h2 {
+	font-size: 24px;
+	padding-left: 30px;
+}
+
+.h3 {
+	font-size: 28px;
+}
+
+.h4 {
+	font-size: 32px;
+}
+
+.aboutText {
+	color: #AAAAC0;
+	width: 1048px;
+	line-height: 200%;
+}
+
+.about_the_event {
+	display: flex;
+	justify-content: space-between;
+	max-height: 578px;
+	padding-right: 202px;
+	padding-left: 202px;
+}
+
+.video {
+	padding-right: 90px;
+	padding: 30px;
+}
+
+.spisokKnopok {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.artist-card {
+	display: flex;
+	padding-left: 30px;
+	width: 1443px;
+}
+
+.p1 {
+	padding-top: 25px;
+	font-size: 24px;
+}
+
+button {
+	border: none;
+	outline: none;
+}
+.artist_btn_active {
+	font-family: monocraft;
+	color: #4A4ACD;
+	font-size: 32px;
+	background-color: #0C0C1C;
+	box-shadow: 0px 4px 24px 0 #4A4ACD;
+	cursor: pointer;
+
+	border-radius: 10px;
+	width: 380px;
+	height: 72px;
+}
+
+.artist-btn {
+	font-family: monocraft;
+	background-color: #000000;
+	color: #51588C;
+	font-size: 32px;
+	box-shadow: 0px 4px 24px 0 rgba(74, 74, 205, 0.34);
+	
+	border-radius: 10px;
+	width: 380px;
+	height: 72px;
+	cursor: pointer;
+}
+
+.pay-frame {
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+}
+
+.pay-btn {
+    width: 490px;
+    height: 108px;
+    border-radius: 35px;
+    background-color: rgba(74, 74, 205, 0.34);
+    font-family: 'Monocraft', monospace;
+    font-size: 32px;
+    color: #9A9AFF;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.pay-btn:hover {
+    background-color: rgba(74, 74, 205, 0.5);
+    box-shadow: 
+        0 0 15px rgba(74, 74, 205, 0.6),
+        0 0 30px rgba(154, 154, 255, 0.4),
+        0 0 45px rgba(183, 183, 255, 0.2);
+    transform: scale(1.05);
+    color: #FFFFFF;
+}
+
+footer {
+	margin-top: 20px;
+	padding-bottom: 30px;
+	background-color: rgba(30, 30, 65, 1);
+}
+
+.p2 {
+	font-family: 'Arial', sans-serif;
+	font-size: 20px;
+	color: #51588C;
+	
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+}
+
+/* Карусель исполнителей */
+.artists-container {
+    position: relative;
+    width: 1443px;
+    min-height: 400px;
+}
+
+.artist-card {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.artist-card.active {
+    display: flex;
+    opacity: 1;
+}
+
+.artist-photo {
+    object-fit: cover;
+    border-radius: 15px;
+    margin-right: 40px;
+}
+
+.spisokKnopok {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+	margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.artist-btn {
+    font-family: 'Monocraft', monospace;
+    background-color: #0C0C1C;
+    color: #51588C;
+    font-size: 28px;
+    box-shadow: 0px 4px 24px 0 rgba(74, 74, 205, 0.34);
+    border-radius: 10px;
+    width: 350px;
+    height: 65px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.artist-btn:hover {
+    box-shadow: 0px 4px 30px 0 rgba(74, 74, 205, 0.6);
+    color: #9A9AFF;
+    transform: translateY(-2px);
+}
+
+.artist-btn.active {
+    color: #4A4ACD;
+    background-color: #0C0C1C;
+    box-shadow: 0px 4px 30px 0 #4A4ACD;
+    border: 1px solid rgba(74, 74, 205, 0.5);
+}
+
+.artist_btn_active {
+    display: none;
+}
+
+.artists {
+	padding-right: 202px;
+	padding-left: 202px;
+    border-radius: 30px;
+}
