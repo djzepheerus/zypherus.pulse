@@ -167,7 +167,6 @@ body {
 }
 
 .video {
-	padding-right: 90px;
 	padding: 30px;
 	width: 300px; /* Ширина вертикального контейнера */
 	height: 500px; /* Высота вертикального контейнера */
